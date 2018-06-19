@@ -83,6 +83,7 @@ call :trim_zero %ts_:~8,2%   hh_
 call :trim_zero %ts_:~10,2%  mm_
 call :trim_zero %ts_:~12,2%  ss_
 call :trim_zero %ts_:~15,3%  xx_
+rem calc time in msec
 set /a "t_=hh_ * 3600000 + mm_ * 60000 + ss_ * 1000 + xx_"
 endlocal & set "%~2=%t_%"
 exit /b 0
