@@ -1,5 +1,4 @@
 @echo off
-chcp 850 >nul
 
 rem   Copyright 2018 Dmitry Sokolov (mr.dmitry.sokolov@gmail.com).
 rem
