@@ -34,6 +34,8 @@ rem +---------------------------------------------------------------------------
 
 setlocal
 
+call "%~dp0..\lib\_init_CMD_LIB.cmd"
+
 call "%CMD_LIB%\process_help_options.cmd" "%~f0" %*  && (endlocal & exit /b 1)
 
 if "%~1"=="" endlocal & exit /b 1
